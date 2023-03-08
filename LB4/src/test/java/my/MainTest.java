@@ -22,6 +22,18 @@ class MainTest {
         double result = main.functionY(2.7, -0.3, 4, 1.3);
         assertEquals(expected, result, 1e-3);
     }
+    @Test
+    void testFunctionY2() {
+        double expected = 3.649;
+        double result = main.functionY(2.7, -0.3, 4, 1.4);
+        assertEquals(expected, result, 1e-3);
+    }
+    @Test
+    void testFunctionY3() {
+        double expected = 0.939;
+        double result = main.functionY(2.7, -0.3, 4, 2);
+        assertEquals(expected, result, 1e-3);
+    }
 
 
     @ParameterizedTest
